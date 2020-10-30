@@ -13,16 +13,6 @@ function Home() {
                 className="rounded" />
                 <h1 className="text-white font-bold text-xl text-center pt-8">Welcome to the homepage.</h1>
                 <p className="text-white text-xs text-center">yes this is built with react</p>
-
-                <h1>express?</h1>
-                <ul>
-                    {this.state.users.map(user =>
-                        <li key={user.id}>{user.username}</li>
-                        )};
-                    <li>
-
-                    </li>
-                </ul>
             </div>
         </div>
     )
