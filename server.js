@@ -7,7 +7,7 @@ app.use(cors())
 
 app.get('/message', function(req, res) {
   var someObject = {
-    "message": "what's a king to a non-believer",
+    "message": "what's a god to a non-believer",
     "statusCode": 1,
     "errors": []
   }
