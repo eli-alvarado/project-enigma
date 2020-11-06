@@ -13,11 +13,10 @@ export default class extends Component {
 
     getMessage = () => {
         fetch("http://localhost:3001/message")
-            .then(res => res.text())
+            .then(res => res.json())
             .then(res => this.setState({
-                apiResponse: res,
+                apiResponse: res.message,
                 showImage: true
-
             }))
 
     }

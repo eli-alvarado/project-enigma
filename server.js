@@ -6,8 +6,13 @@ app.use(cors())
 
 
 app.get('/message', function(req, res) {
+  var someObject = {
+    "message": "what's a king to a non-believer",
+    "statusCode": 1,
+    "errors": []
+  }
   console.log('message route');
-  res.send('choch');
+  res.send(someObject);
 })
 
 
