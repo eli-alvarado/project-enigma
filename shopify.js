@@ -8,11 +8,11 @@ const request = require('request');
 function callShopify(callback) {
   // This is just dummy data, so these creds don't mean much. In a production environment, 
   // these would be stored in a config file that git would ignore.
-  let email = '20ed127ef1227d5456da17d5faaf7165';
-  let pass = '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';
-  let shop = 'projectenigma';
+  let apiKey = '1bdd5802ce95aa9c6318d1a834e8c3a9';
+  let apiPw = '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';
+  let shop = 'eli-testing-store';
   let route = '/products.json';
-  let url = `https://${email}:${pass}@${shop}.myshopify.com/admin/api/2020-10${route}`;
+  let url = `https://${apiKey}:${apiPw}@${shop}.myshopify.com/admin/api/2020-10${route}`;
 
 
   // request is an npm package. def the easiest http/https library to work with. 
